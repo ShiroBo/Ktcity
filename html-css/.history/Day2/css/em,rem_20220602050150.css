@@ -1,0 +1,17 @@
+
+/*
+Hầu hết cách tình duyệt mặc định đều có font-size = 16px
+    1em =   1rem    =   10px
+*/
+.em{
+    width: 10em;
+    height: 10em;
+    background-color: red;
+    font-size: 32px;
+}
+.rem{
+    width: 10rem;
+    height: 10rem;
+    background-color: beige;
+    font-size: 32px;
+}

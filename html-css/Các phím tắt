@@ -1,0 +1,8 @@
+
+Alt + mũi tên lên xuống di chuyển dòng code
+Shift + Alt mũi tên lên xuống : coppy 1 dòng
+bôi đen + ctrl D : chọn những cái giống nhau
+ul>li*10{lorem} => tạo 10 thẻ li nội dung lorem 
+ul>li*10{lorem$} => tạo 10 thẻ li nội dung 1 =10
+h1+p : tạo 2 thẻ h1 vả p 
+h1.class+p.dsc : thẻ h1 với class là class và p class dsc

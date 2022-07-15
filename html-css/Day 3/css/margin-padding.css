@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.margin{
+width: 14rem;
+height: 14rem;
+background-color: red;
+
+/*
+margin: 10px 10px 10px 10px;
+margin-top: 20px;
+margin-left: 30px;
+margin-right: 40px;
+margin-bottom: 50px;
+
+- 1 giá trị -> top=right=left=bottom = 20px
+margin:20px;
+- 2 giá trị -> top=bottom = 20px; left=right=20px;
+margin: 20px 40px;
+- 3 giá trị -> top=10;left=right=20px; bottom:20px
+margin: 10px 20px 30px;
+- 4 giá trị -> top= 10px; right =10; left= 10px; bottom = 10px;
+margin: 10px 10px 10px 10px 
+
+margi-left:auto (căn bên trái)
+margi-right:auto (căn bên phải)
+margin-left:auto;margin-right:auto ( Căn Giữa)
+
+margin collapse : khi 2 khối chung margin lấy margin giá trị lớn hơn và có thể sử dụng giá trị âm
+// nếu để số âm thì nó sẽ chèn lên trên các phần tử
+*/
+}
+.padding{
+    width: 12rem;
+    height: 10rem;
+    background-color: red;
+    margin: auto;
+    overflow: hidden;
+    padding: 10px;
+/* padding sẽ không sử dụng được số âm */
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid red;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: black;
+/*
+Conten-box : 
+width : width + padding-left + padding-right + border-left + border-right
+100px + 10px + 10px + 5px + 5px
+height : height + padding-left + padding-right + border-left + border-right
+100px + 10px + 10px + 5px + 5px
+
+border-box: 
+width = width - padding-left - padđing-right - boder-left - border-right
+height = height - padding-left - padđing-right - boder-left - border-right
+
+*/
+}

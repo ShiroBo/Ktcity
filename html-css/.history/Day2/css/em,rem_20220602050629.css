@@ -1,0 +1,23 @@
+
+/*
+Hầu hết cách tình duyệt mặc định đều có font-size = 16px
+    1em =   1rem    =   10px
+    Công thức quy đổi phương thức em  
+    100% =16px;
+    ?% = 10px;
+    ? = 65.5%
+*/
+.em{
+    width: 10em;
+    height: 10em;
+    background-color: red;
+    font-size: 32px;
+    /* Đơn vị em là đơn vị sẽ phụ thuộc vào thuộc tính font-size của chính nó hoặc phần tử chứa nó */
+}
+.rem{
+    width: 10rem;
+    height: 10rem;
+    background-color: beige;
+    font-size: 32px;
+     /* Đơn vị em là đơn vị sẽ phụ thuộc vào thuộc tính font-size của html */
+}

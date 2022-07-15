@@ -1,0 +1,25 @@
+
+html{
+    font-size: 62.5%;
+}
+.rem{
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+    border: 20px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+/*
+border-radius : (Bo tròn các góc )
+border-top-left-radius : 50px
+border-top-right-radius : 50px
+border-bottom-right-radius:50px
+border-bottom-left-radius:50px
+
+*/
+}
+
+

@@ -1,0 +1,20 @@
+.background{
+    width: 100px;
+    /* min-height: 100px; có nghĩa chiều dài tối thiểu sẽ là 100px  */
+    max-height: 100px; /* Chiều cao tối đa của nó sẽ là 100px */
+    
+    /* height: 100px; */
+    background: red;
+    overflow-y: auto;
+
+    /* overflow: hidden; 
+        Nếu nội dung quá dài thì nó sẽ biến mất.
+    */
+    
+    /* overflow-y: auto ; 
+     nó sẽ xuất hiện thanh scroll
+    */
+    
+
+
+}

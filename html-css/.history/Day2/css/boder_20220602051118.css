@@ -1,0 +1,8 @@
+html{
+    font-size: 62.5%;
+}
+rem{
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+}
