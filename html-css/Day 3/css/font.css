@@ -12,6 +12,27 @@ body{
 .font{
     /* Khoảng cách giữa các chữ */
     line-height: 2;
-    text-align: right;
-
+    /* Căn chữ sang bên phải */
+    text-align: left;
+    max-width: 300px;
+    /* Khoảng cách giữa các kí tự  */
+    letter-spacing: 1px;
+    /* khoảng cách giữa các từ */
+    word-spacing: 5px;
+    /* Chữ luôn hiển thị trên 1 dòng không rớt xuống dòng */
+    /* white-space: nowrap; */
+    /* nếu tràn ra ngoài thì nó sẽ bị ẩn đi */
+    overflow: hidden;
+    /* Hiện thị dấu 3 chấm trên 1 hàng */
+    text-overflow: ellipsis;
+    /* Hiện thị dấu 3 chấm tới hàng thứ 3 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3 ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Rớt tùm lum tùm la nếu nhiều quá  */
+    word-break: break-all;
+    /* rớt theo từ có ý nghĩa  */
+    word-break: break-word;
 }

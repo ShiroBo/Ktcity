@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+img{
+    display: block;
+   width: 100%;
+}
+.image-wrap{
+    text-align: center;
+}
+
+.image{
+    width: 20rem;
+    height: 20rem;
+    /* Làm cho ảnh sẽ không bị méo  */
+    object-fit: cover;
+    /* nhìn vị trí hình ảnh ở các vị trí  */
+    object-position: top ;
+    /* Căn Giữa với thẻ block */
+    margin: auto;
+    display: inline-block;
+
+}
