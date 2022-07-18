@@ -28,15 +28,26 @@ img{
     */
 }
 /* Tạo chữ gradient */
+/*  trình duyệt mà không hỗ trợ sẽ chạy chữ xanh */
 .title{
     font-weight: bold;
     font-size: 3rem;
-    background-image: linear-gradient(to right bottom,#00aefd,#ffa400);
     display: inline-block;
     margin: 2rem;
     margin-left: 2rem;
+    color: #00aefd;
     /* màu trong suốt */
+    /* color: transparent;
+    background-image: linear-gradient(to right bottom,#00aefd,#ffa400);
+    -webkit-background-clip: text;
+    background-clip: text; */
+}
+/* Check trình duyệt hỗ trợ thì sẽ chạy cái này  */
+@supports (-webkit-background-clip: text){
+    .title{
+    background-image: linear-gradient(to right bottom,#00aefd,#ffa400);
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    }
 }
