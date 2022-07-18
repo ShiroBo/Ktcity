@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    /* Thuộc tính nào ở trước thì sẽ chạy trước */
+    background-image:linear-gradient(to  top,rgba(0, 173, 253, 0.712),rgba(255, 166, 0, 0.751)), url(https://images.unsplash.com/photo-1658023495319-2786b348d829?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-size: cover;
+
+}

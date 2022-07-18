@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+/* Tạo background gradient */
+.boxed{
+    width: 20rem;
+    height: 20rem;
+    background-image: linear-gradient(to right bottom,rgb(104, 64, 64) 30%, rgb(160, 110, 110) );
+
+    /* 
+    Direction : to right, to left, to bottom, to top, 
+    top right bottom,to right top,to left bottom,to left top
+    120deg
+    color 1 
+    color 2
+    */
+}
+/* Tạo chữ gradient */
+.title{
+    font-weight: bold;
+    font-size: 3rem;
+    background-image: linear-gradient(to right bottom,#00aefd,#ffa400);
+    display: inline-block;
+    margin: 2rem;
+    margin-left: 2rem;
+    /* màu trong suốt */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
