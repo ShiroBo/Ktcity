@@ -1,0 +1,97 @@
+/* Sự khác nhau giữa   opacity: 0; visibility: hidden; display: none;  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Khai báo biến toàn bộ  */
+:root{
+    --primary-color:rgba(47, 47, 134, 0.933);
+}
+/* muốn dùng thì khai báo background-color: var(--primary-color); */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 2.6rem;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to right,#212197,#1231);
+    /* Con trỏ */
+    cursor: pointer;
+    opacity: 0; 
+    /* opacity: 0(vẫn chiếm diện tích có thể nhấn vô được) */
+    visibility: hidden;
+    /* visibility: hidden; vẫn chiếm diện tích  và không nhấn vô được */
+    /* opacity:0 và visibility:hidden; sẽ làm hiệu ứng ấn vào hiện ra   */
+    display: none;
+    /*  display: none; Biến mất toàn toàn và không chiếm diện tích và không ấn được (dùng để làm hiệu ứng xuất hiện nhanh gọn lẹ )*/
+}
+/*  box-sadow */
+.box-sadow{
+    /* Khai báo biến cục bộ */
+    --primary-color:red;
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--primary-color);
+    margin: 5rem auto;
+    box-shadow: inset 5px 5px 20px 5px black;
+    /* box-shadow: x y blur scale color 
+    mặc định sẽ là out set : bên ngoài 
+    muốn ở bên trong thì thêm inset
+    */
+}
+/* text-shadow */
+.text-shadow{
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-shadow: 5px 10px 30px rgb(255, 166, 0);
+}
+/* Độ ưu tiên trong css 
+    tags < class < id <!impostant
+
+*/
+h2{
+    font-size: 4rem  ;
+    font-weight: bold;
+}
+/* child selectors  */
+/* Chọn phần tử đầu tiên */
+li:first-child{
+    color: red;
+}
+/* Chọn phần tử cuối cùng */
+li:last-child{
+    color: orange;
+}
+/* Chọn phần tử mình muốn */
+li:nth-child(2){
+    color: violet;
+}
+li:nth-child(4){
+    color: #212197;
+}
+/* Đảo ngược phần tử từ 1,2,3,4 - 4,3,2,1  */
+li:nth-last-child(7){
+    color: yellow;
+}
+/*  not : Không Phải (Ví Dụ: cái đầu tiền sẽ không được bôi đen và tất cả cái còn lại sẽ bôi đen)*/
+li:not(:first-child){
+    color: rgb(63, 19, 19);
+}
+/* Chọn các phần tử lẻ */
+li:nth-child(odd){
+    color: #212197;
+}
+/* chọn các phần tử chẵn */
+li:nth-child(even){
+    color: aqua;
+}
+/* Kiểu An+b vd(2n+1) = (2*1+1)=2 */
+li:nth-child(2n + 1){
+    color: rgb(226, 13, 13);
+}
+
