@@ -58,10 +58,10 @@ h2{
     font-size: 4rem  ;
     font-weight: bold;
 }
-/* child selectors  */
+/* child selectors : lấy theo vị trí  */
 /* Chọn phần tử đầu tiên */
 li:first-child{
-    color: red;
+    color: rgb(226, 21, 21);
 }
 /* Chọn phần tử cuối cùng */
 li:last-child{
@@ -82,7 +82,7 @@ li:nth-last-child(7){
 li:not(:first-child){
     color: rgb(63, 19, 19);
 }
-/* Chọn các phần tử lẻ */
+/* Chọn các phần tử lẻ */s
 li:nth-child(odd){
     color: #212197;
 }
@@ -94,4 +94,10 @@ li:nth-child(even){
 li:nth-child(2n + 1){
     color: rgb(226, 13, 13);
 }
+
+/* type selectors : sẽ check theo kiểu(các thành phần sẽ giống với child selectors) */
+li:first-of-type{
+    color: rgb(253, 1, 1);
+}
+
 
