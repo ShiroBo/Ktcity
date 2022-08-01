@@ -100,4 +100,52 @@ li:first-of-type{
     color: rgb(253, 1, 1);
 }
 
+/* combinators trong CSS  */
+/* + : là liền kề nó */
+h3 + .title {
+    color: green;
+}
+/* ~ : là những thằng đúng cùng cấp với nhau nhưng không nhất thiết phải liền kề  */
+/* selectors nâng cao */
+/* Bắt đầu */
+a[href^="https"]{
+    color: plum;
+}
+/* kết thúc */
+a[href$=".vn"]{
+    color:#212197 ;
+}
+/* Có chứa */
+a[href*="www"]{
+    color: violet;
+}
+/* Chính xác */
+div[data-title=value]{
+    color: red;
+}
+/* Lấy kí tự đầu tiên */
+p::first-letter{
+    color: blue;
+}
+/* Lấy từ dòng đầu tiên */
+p::first-line{
+    color: orange;
+}
+/*  transition cơ bản */
+.boxed2{
+    width: 20rem;
+    height: 20rem;
+    background-color: red;
+    /* transition: background-color 0.2s linear, color 0.2s linear; */
+    /*  áp dụng cho toàn bộ */
+    transition: all 0.2s linear;
 
+    /* transition: property time 2s easing */
+    /* transition: background-color 2s linear;
+    transition-delay: 2s; */
+}
+.boxed2:hover{
+    background-color: #212197;
+    color: white;
+}
+/* transition sẽ không sự dụng đc cho display thay vào đó chúng ta sẽ sử dung opacity=0 và 1 */
