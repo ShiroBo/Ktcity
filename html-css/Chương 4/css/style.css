@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+.boxed{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    /* transform : nó sẽ làm thay đổi vật thể ban đầu nhưng vật thể ban đầu sẽ luôn chiếm diện tích như vậy
+    -- transform sẽ làm nó to hơn và không đẩy các phẩn tử khác
+    -- nếu để 90deg thì nó sẽ không hiện gì vì khi đó nó sẽ nằm ở mặt phẳng hướng mình nhìn sẽ không thể thấy được */
+    /* transform: sacleX(2) scaleY(2) 'sacleX là theo chiều ngang,scaleY là theo chiều dọc */
+    transform: scale(0.5,0.5);
+    /* rotate: xoay (45deg) deg là độ 'rotate Z là theo mặt phẳng' */
+    transform: rotate(45deg);
+    /* transform:translate di chuyển theo trung tọa độ x y  */
+    transform: translateX(5%) translateY(20%);
+    /* dùng chung 3 thuộc tính transform */
+    transform: scale(2) rotate(45deg) translate(100%);
+    /* transform:skew  */
+    transform: skew(-30deg);
+}
+.boxed2{
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.wapper{
+    width: 100%;
+    height: 50rem;
+    background-color: black;
+    position: relative;
+}
+.boxed3{
+    width: 20rem;
+    height: 5rem;
+    background-color: red;
+   position: absolute;
+   /* top: 10px;
+   left: 10px; */
+    /* top: 10px;
+    right: 10px; */
+    /* bottom: 10px;
+    right: 10px; */
+    /* Center theo chiều ngang */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    /* Center theo chiều dọc */
+    /* top: 50%;
+    transform: translateY(-50%); */
+/* Center chiều ngang và chiều dọc */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    /* overlay all (phủ toàn bộ wapper) */
+   /* Cách 1 */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    /* cách 2 (Vì có width và height cố định rồi nó sẽ ưu tiền và đè nên cái top bottom right và left)*/
+    /* top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    width: auto;
+    height: auto;     */
+    /* overlay theo chiều ngang */
+    /* Cũng có thể dùng width auto thì phải thêm right*/
+    /* width: auto;
+    left: 0;
+    top: 0; */
+    /* right:0; */
+    /* overlay theo chiều dọc */
+    /* cũng có thể dùng height:auto và phải thêm bottom:0 */
+    height: 100%;
+    top: 0;
+    /* bottom: 0; */
+    /* z-index:1 chỉ sử dụng cho position
+       z-index:1 sẽ giống như các lớp,lớp nào lớn hơn thì sẽ đè lên thằng trước
+    */
+    z-index: 1;
+
+}
+p{
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+}
