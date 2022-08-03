@@ -9,6 +9,8 @@ html{
 body{
     font-size: 1.6rem;
     font-weight: normal;
+    height: 2000px;
+    /* padding-top: 10rem; */
 }
 .boxed{
     width: 5rem;
@@ -93,8 +95,31 @@ body{
     z-index: 1;
 
 }
-p{
+/* p{
     position: relative;
     z-index: 2;
     color: aliceblue;
+} */
+
+.header{
+    width: 100%;
+    height: 10rem;
+    background-color: red;
+    /* position:fixed (nó sẽ phụ thuộc vào thẻ body và không phụ thuộc vào position:relative) 
+    -- không nên đi kèm với thuộc tính transform
+    */
+    position:fixed ;
+    top: 0;
+    left: 0; 
+     width: 100%;
+}
+/* Bắt buộc phải có content có thể chứa nội dung hoặc để rỗng */
+
+/* befoore là ở trước */
+.title::before{
+    content: " Toi ten la "
+}
+/* after là ở sau */
+.title::after{
+    content: " Học html css ";
 }
