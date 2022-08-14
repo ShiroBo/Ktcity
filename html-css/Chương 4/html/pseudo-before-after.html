@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/129fb00c2b.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* Bắt buộc phải có content có thể chứa nội dung hoặc để rỗng */
+
+/* befoore là ở trước */
+/* .title::before{
+    content: " Toi ten la "
+} */
+/* after là ở sau */
+/* .title::after{
+    content: " Học html css ";
+} */
+    .title{
+        position: relative;
+        padding-left: 20px;
+        margin: 50px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    /* Nếu muốn căn chỉnh khi sử dụng before hoặc after thì sử dụng position và dùng top left right bottom */
+    .title::before
+    {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .line{
+        text-align: center;
+        position: relative;
+    }
+    .line::after{
+        content:"";
+        width: 100%;
+        height: 1px;
+        background-color: orange;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .line-text{
+        display: inline-block;
+        padding: 10px;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+    }
+    .icon{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 4px;
+       
+        color: rgb(9, 14, 13);
+        position: relative;
+        margin: 5rem auto;
+    }
+    .icon:after {
+        content: "";
+        /* inherit : kế thừa, thừa hưởng */
+        border-radius: inherit;
+        background-color: currentColor;
+        opacity: 0.25;
+        /* Phủ toàn lớp cha bao ngoài của relative */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .icon-user{
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .effrct{
+        text-decoration: none;
+        display: inline-block;
+        padding: 19px;
+        background-color: white;
+        border: 1px solid orange;
+        margin: 50px;
+        transition: color 0.25s linear;
+        position: relative;
+        z-index: 1;
+    }
+    .effrct:before{
+        content: "";
+        width:  100%;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: orange;
+        transition: all 0.25s linear;
+        z-index: -1;
+       
+    }
+    .effrct:hover:before{
+        height: 100%;
+    }
+    .effrct:hover{
+        color:  white;
+    }
+    .boxed{
+        width: 10rem;
+        height: 10rem;
+        /* background-color: red; */
+        position: relative;
+    }
+    .boxed::after{
+       content: "";
+       position:absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: red;
+       transform: rotate(45deg);
+       z-index: -1;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h2 class="title">Nguyễn Xuân Bình</h2>
+    <h3 class="line">
+        <span class="line-text">ShiroB</span>
+    </h3>
+    <div class="icon">
+        <i class="fa fa-user icon-user"></i>
+    </div>
+    <a href="#" class="effrct">Effect</a>
+
+    <div class="boxed"><p>ABCD</p></div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.list{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+    /* flex-direction: row;
+     ( giá trị mặc định sẽ là row) */
+    /* chạy người lại của row */
+    /* flex-direction: row-reverse; */
+    /* align-items : sẽ căn theo chiều dọc */
+    /* align-items: stretch; sẽ làm giá trị các cột sẽ cao bằng nhau */
+    /* align-items: stretch; Giá trị mặc định */
+    /* Căn phía trên đầu */
+    /* align-items: flex-start; */
+    /* căn phía dưới */
+    /* align-items: flex-end; */
+    /* Căn giữa */
+    /* align-items: center; */
+    /* Căn phía dưới chữ */
+    /* align-items: baseline; */
+    /**/
+    /* justfy-content: sẽ căn theo chiều ngang */
+    /* Justfy-content:flex-start */
+    /* năm bên phải */
+    /* justify-content: flex-end; */
+    /* Các khối nằm giữa */
+    /* justify-content: center; */
+    /* Tạo khoảng trống giữa các phần tử */
+    /* justify-content: space-between;s */
+    /* Có khoảng trống xung quanh(khoảng trống bên trái sẽ bằng 1 nữa khoảng trống nằm giữa ) */
+    /* justify-content: space-around; */
+    /* Muốn các khoảng trống luôn bằng nhau */
+    /* justify-content: space-evenly; */
+
+    /* Flex-wrap */
+    /* flex-wrap: nowrap;Mặc định nó sẽ chia đều cho nhau để không rớt xuống hàng */
+    /* Nếu muốn rớt xuống hàng */
+    /* flex-wrap: wrap; */
+    /* Viết tắt của flex-direction và flex-wrap */
+    /* flex-flow: row nowrap; */
+
+}
+.list__item{
+    padding: 1rem;
+    background-color: orange;
+    margin: 10px 5px;
+    /* width: 40%; */
+    order: 0;
+}
+.list__item:nth-child(2){
+    order: 1;
+}
+.list__item:nth-child(3){
+    order: 4;
+}
+.list__item:first-child{
+    /* font-size: 5rem; */
+}
+.list__item:last-child{
+    /* self: cá nhân */
+    /* align-seft : dùng để căn 1 mình cá nhân nó */
+    /* align-self: flex-end; */
+    order: 2;
+}
+.layout{
+    display: flex;
+}
+.icon{
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    border-radius: 1rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.layout p {
+    --value: 10rem;
+    width: calc(100% - var(--value));
+    
+    /* -100 */
+    margin-bottom: calc(-1 * 100px);
+}

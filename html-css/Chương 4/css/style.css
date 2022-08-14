@@ -116,10 +116,10 @@ body{
 /* Bắt buộc phải có content có thể chứa nội dung hoặc để rỗng */
 
 /* befoore là ở trước */
-.title::before{
+/* .title::before{
     content: " Toi ten la "
-}
+} */
 /* after là ở sau */
-.title::after{
+/* .title::after{
     content: " Học html css ";
-}
+} */
